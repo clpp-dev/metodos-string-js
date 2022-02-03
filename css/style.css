@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins','Montserrat', sans-serif; ; 
+}
+body {
+    align-items: center;
+    background-color: #eaeef0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+hr{
+    background-color: #2f3542;
+    border-radius: 7px;
+    height: 0.2em;
+    width: 100%;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 0.4em;
+    color: #2f3542;
+}
+
+.box-buttons{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn{
+    border-style: none;
+    border-radius: 10%;
+    color: #2f3542;
+    padding: 0.7em 1em;
+    font-weight: bold;
+    background-color: #eaeef0;
+    margin: 0.2em 0.2em;
+    box-shadow: -8px -8px 15px rgba(255,255,255,1),
+    8px 8px 15px rgba(0,0,0,0.2),
+    inset 3px 3px 5px rgba(0,0,0,0.1),
+    inset -1px -1px 5px rgba(255,255,255,1);
+    transition: 0.4s;
+}
+
+.btn:hover{
+    background-color: #d5d7d8;
+    cursor:pointer;
+}
+
+.textarea-box{
+    border-style: none;
+    border-radius: 7px;
+    padding: 0.7em 0.5em;
+    font-weight: bold;
+    background-color: #eaeef0;
+    margin: 1.2em 0em;
+    box-shadow: -8px -8px 15px rgba(255,255,255,1),
+    8px 8px 15px rgba(0,0,0,0.2),
+    inset 3px 3px 5px rgba(0,0,0,0.1),
+    inset -1px -1px 5px rgba(255,255,255,1);
+    width: 90%;
+    transition: 0.4s;
+}
+
+.textarea-box:focus{
+    border-style: none;
+    background-color: #e4e4e4;
+    transform: scale(105%);
+    z-index: 1;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2em 2em;
+}
+
+.social-icons img{
+    width: 45px;
+}
+
+@media (max-width: 411px){
+    .box-buttons{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 0rem;
+        width: 90%;
+    }
+    .btn{
+        margin: 0.7em 0.2em;
+    }
+    .textarea-box:focus{
+        transform: scale(102%);
+    }
+}
